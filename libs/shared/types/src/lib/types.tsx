@@ -1,18 +1,24 @@
-import styled from 'styled-components';
+export type TypographyVariant =
+  | 'h1'
+  | 'h2'
+  | 'h3'
+  | 'h4'
+  | 'h5'
+  | 'h6'
+  | 'textL'
+  | 'textM'
+  | 'textS'
+  | 'textXS'
+  | 'label';
 
-/* eslint-disable-next-line */
-export interface TypesProps {}
-
-const StyledTypes = styled.div`
-  color: pink;
-`;
-
-export function Types(props: TypesProps) {
-  return (
-    <StyledTypes>
-      <h1>Welcome to Types!</h1>
-    </StyledTypes>
-  );
+interface FontData {
+  color: string;
+  fontFamily: 'Inter' | 'Lato';
+  fontSize: string;
+  lineHeight: string;
+  fontWeight: 300 | 400 | 500 | 600 | 700;
+  fontStyle?: 'normal' | 'italic';
+  letterSpacing?: string;
 }
 
-export default Types;
+export type TypographyData = { [key in TypographyVariant]: FontData };

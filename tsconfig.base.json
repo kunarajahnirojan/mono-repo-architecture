@@ -32,7 +32,10 @@
         "libs/shared/types/src/index.ts"
       ],
       "@mono-repo-architecture/shared/ui": ["libs/shared/ui/src/index.ts"],
-      "@mono-repo-architecture/shared/utils": ["libs/shared/utils/src/index.ts"]
+      "@mono-repo-architecture/shared/utils": [
+        "libs/shared/utils/src/index.ts"
+      ],
+      "@mono-repo-architecture/ui": ["libs/customer/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
