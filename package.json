@@ -2,7 +2,13 @@
   "name": "@mono-repo-architecture/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "customer": "nx serve customer-app --configuration=development --port=4001",
+    "admin": "nx serve administration --configuration=development",
+    "build-customer": "nx build customer-app",
+    "build-admin": "nx build admin",
+    "format": "prettier --loglevel warn --write \"{apps,libs}/**/*.{jsx,js,tsx,ts}\""
+  },
   "private": true,
   "dependencies": {
     "react": "18.2.0",

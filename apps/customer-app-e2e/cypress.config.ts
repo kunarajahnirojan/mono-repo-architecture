@@ -8,10 +8,10 @@ export default defineConfig({
       cypressDir: 'src',
       bundler: 'vite',
       webServerCommands: {
-        default: 'nx run customer:serve',
-        production: 'nx run customer:preview',
+        default: 'nx run customer-app:serve',
+        production: 'nx run customer-app:preview',
       },
-      ciWebServerCommand: 'nx run customer:serve-static',
+      ciWebServerCommand: 'nx run customer-app:serve-static',
     }),
     baseUrl: 'http://localhost:4200',
   },
