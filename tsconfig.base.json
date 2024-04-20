@@ -19,14 +19,15 @@
       "@mono-repo-architecture/components/base": [
         "libs/components/base/src/index.ts"
       ],
-      "@mono-repo-architecture/config": ["libs/config/src/index.ts"],
-      "@mono-repo-architecture/constants": ["libs/constants/src/index.ts"],
-      "@mono-repo-architecture/layouts": ["libs/layouts/src/index.ts"],
-      "@mono-repo-architecture/providers": ["libs/providers/src/index.ts"],
-      "@mono-repo-architecture/router": ["libs/router/src/index.ts"],
       "@mono-repo-architecture/components/shared": [
         "libs/components/shared/src/index.ts"
       ],
+      "@mono-repo-architecture/config": ["libs/config/src/index.ts"],
+      "@mono-repo-architecture/constants": ["libs/constants/src/index.ts"],
+      "@mono-repo-architecture/feature": ["libs/customer/feature/src/index.ts"],
+      "@mono-repo-architecture/layouts": ["libs/layouts/src/index.ts"],
+      "@mono-repo-architecture/providers": ["libs/providers/src/index.ts"],
+      "@mono-repo-architecture/router": ["libs/router/src/index.ts"],
       "@mono-repo-architecture/shared/types": [
         "libs/shared/types/src/index.ts"
       ],
