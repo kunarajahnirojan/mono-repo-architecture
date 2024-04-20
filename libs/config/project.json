@@ -1,5 +1,5 @@
 {
-  "name": "config",
+  "name": "common-config",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/config/src",
   "projectType": "library",

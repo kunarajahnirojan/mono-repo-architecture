@@ -1,6 +1,5 @@
 import React from 'react';
 import { Loading } from '@mono-repo-architecture/components/base';
-import { Home } from '@mono-repo-architecture/feature';
 
 interface Props {
   page: any;

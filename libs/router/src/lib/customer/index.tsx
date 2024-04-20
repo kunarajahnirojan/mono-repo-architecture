@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Lazy, NotFound } from '@mono-repo-architecture/components/base';
 import { CustomerLayout } from '@mono-repo-architecture/layouts';
 import { HOME, ABOUT } from '@mono-repo-architecture/constants';
-import { About, Home } from '@mono-repo-architecture/feature';
+import { Home, About } from '@mono-repo-architecture/customer/feature';
 
 export const CustomerRouter = () => {
   return (
