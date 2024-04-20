@@ -1,17 +1,7 @@
-import styled from 'styled-components';
-
-import NxWelcome from './nx-welcome';
-
-const StyledApp = styled.div`
-  // Your style here
-`;
+import { CustomerProvider } from "@mono-repo-architecture/providers";
 
 export function App() {
-  return (
-    <StyledApp>
-      <NxWelcome title="customer" />
-    </StyledApp>
-  );
+  return <CustomerProvider />;
 }
 
 export default App;

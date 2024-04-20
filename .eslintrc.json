@@ -31,5 +31,52 @@
       "extends": ["plugin:@nx/javascript"],
       "rules": {}
     }
-  ]
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [
+      "error",
+      { "extensions": [".jsx", ".tsx"] }
+    ],
+
+    "no-debugger": "off",
+
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          ["builtin", "external"],
+          "internal",
+          ["sibling", "parent", "index"]
+        ],
+        "newlines-between": "always"
+      }
+    ],
+
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": "error"
+  },
+
+  
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+
+
+
+
 }
