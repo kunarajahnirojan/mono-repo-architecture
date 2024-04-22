@@ -3,22 +3,20 @@ import { Outlet } from 'react-router-dom';
 
 import { Footer } from './footer';
 import { Header } from './header';
-import styled from 'styled-components';
-
-const OutLetContainer = styled.div`
-  height: 90vh;
-`;
+import { SideBar } from './sidebar';
 
 export function CustomerLayout() {
   return (
-    <div>
-      <main>
-        <Header />
-        <OutLetContainer>
+    <div className="min-h-full flex flex-col">
+      <Header />
+      <main className="flex  flex-row">
+        <div className="h-full md:block hidden">
+          <SideBar />
+        </div>
+        <div className="bg-white flex w-full flex-col justify-between">
           <Outlet />
-        </OutLetContainer>
-
-        <Footer />
+          <Footer />
+        </div>
       </main>
     </div>
   );

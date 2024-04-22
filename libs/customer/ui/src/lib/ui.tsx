@@ -1,18 +1,7 @@
-import styled from 'styled-components';
+import React from 'react'
 
-/* eslint-disable-next-line */
-export interface UiProps {}
-
-const StyledUi = styled.div`
-  color: pink;
-`;
-
-export function Ui(props: UiProps) {
-  return (
-    <StyledUi>
-      <h1>Welcome to Ui!</h1>
-    </StyledUi>
-  );
+function ui() {
+  return <div>ui</div>;
 }
 
-export default Ui;
+export default ui
